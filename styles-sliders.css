@@ -1,0 +1,119 @@
+:root {
+  --position-name: "carousel-container";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px auto;
+}
+
+ul {
+  position: relative;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 0 auto;
+  width: 50vw;
+  display: flex;
+  gap: 4vw;
+  overflow-x: scroll;
+  position: relative;
+  scroll-snap-type: x mandatory;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  anchor-name: --position-name;
+  scrollbar-width: 35px;
+  scroll-marker-group: after;
+}
+
+ul::scroll-button(left) {
+  position: absolute;
+  position-anchor: --position-name;
+  top: 35%;
+  left: 20%;
+  content: "<";
+}
+
+ul::scroll-button(right) {
+  content: ">";
+  position: absolute;
+  position-anchor: --position-name;
+  top: 35%;
+  right: 20%;
+}
+ul::scroll-button(*) {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+ul::scroll-marker-group {
+  position: absolute;
+  anchor-name: --position-name;
+  top: 55%;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+li {
+  font-size: 30px;
+  font-weight: bold;
+  width: 500px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  list-style: none;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  flex-basis: 100%;
+}
+
+li::scroll-marker {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+li::scroll-marker:target-current {
+  background-color: black;
+}
+
+li:nth-child(1) {
+  background-color: rgb(228, 228, 27);
+}
+li:nth-child(2) {
+  background-color: rgb(92, 214, 248);
+}
+li:nth-child(3) {
+  background-color: rgb(75, 200, 75);
+}
+li:nth-child(4) {
+  background-color: orange;
+}

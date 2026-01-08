@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fumigación MX</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="relative">
+    <!--  MENU HEADER -->
+    <!-- component -->
+    <nav
+        class="bg-white border border-gray-200 dark:border-gray-700 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 shadow">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="/" class="flex items-center">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+                    Fumigación MX
+                </span>
+            </a>
+
+            <div class="flex items-center">
+                <button id="menu-toggle" type="button"
+                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden">
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Hamburger icon -->
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="w-full md:block md:w-auto hidden" id="mobile-menu">
+                <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                            aria-current="page">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="container mx-auto " id="hero-section">
+        <h1 class="text-5xl text-white font-semibold text-center py-20">Fumigación Experta para tu empresa</h1>
+
+        <p class="text-3xl text-white text-center">¡Garantizamos un ambiente libre de plagas hasta 6 meses de garantia!
+        </p>
+
+        <div class="flex justify-center pt-10">
+            <a href="https://wa.me/+1234567891" class="cursor-pointer" target="_blank">
+
+                <button class="p-4 bg-blue-700 hover:bg-blue-800 text-white rounded-xl w-80 cursor-pointer">Agenda tu
+                    cita</button>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="container mx-auto px-20">
+        <h1 class="text-center text-4xl font-semibold mt-10 ">Servicio de Fumigación y Sanitización a tu Alcance</h1>
+
+
+        <div class="flex justify-center gap-10 mt-20">
+            <p class="text-2xl font-bold w-[400px] text-center  mt-20">Controlamos las plagas que invaden tu negocio</p>
+
+            <article class="p-10 shadow-2xl rounded w-[600px] ">
+                <p class="text-lg">Nuestro metodo patentado de Sanitización brinda un ambiente seguro y limpio para
+                    trabajar. Contamos
+                    con más de 20 años de experiencia, ofrecemos soluciones acorde al tipo de infestación que atormenta
+                    a tu negocio, adaptandonos facilmente a tu presupuesto, ubicación y tiempo. </p>
+
+            </article>
+
+        </div>
+
+
+        <div class="flex justify-center gap-10 mt-20">
+
+            <article class="p-10 shadow-2xl rounded w-[600px] ">
+                <ul class="flex flex-col gap-10">
+                    <li>
+                        <span></span>
+                        <p class="text-xl font-bold mb-1">* Fumigación de chinches: </p>
+                        <span>Soluciones efectivas para erradicar infestaciones de manera profesional y rápida.</span>
+                    </li>
+                    <li>
+                        <p class="text-xl font-bold mb-1">* Fumigación de cucarachas: </p>
+                        <span>Eliminamos estas plagas comunes con productos certificados y seguros.</span>
+                    </li>
+                    <li>
+                        <p class="text-xl font-bold mb-1">* Fumigación de restaurantes: </p>
+                        <span>Garantizamos el cumplimiento de normas sanitarias y protección alimentaria.</span>
+                    </li>
+                    <li>
+                        <p class="text-xl font-bold mb-1">* Fumigación comercial y empresarial: </p>
+                        <span>Diseñamos planes personalizados para grandes espacios y operaciones continuas.</span>
+                    </li>
+                </ul>
+
+            </article>
+
+            <p class="text-3xl font-bold w-[400px] text-center  mt-40">Especialidades</p>
+        </div>
+
+    </section>
+
+    <section class="container mx-auto px-20 mt-20">
+        <h1 class="text-center text-4xl font-semibold mt-10 ">Beneficios Inmediatos al contratar el servicio</h1>
+
+        <div class="grid grd-cols-1 md:grid-cols-2">
+            <article class="flex flex-col justify-center align-center mt-20">
+                <img src="/images//imagen_1.png" class="w-40 h-40 block mx-auto" alt="photo_1">
+                <p class="text-xl font-semibold mt-5 text-center">Personal Especializado.</p>
+
+            </article>
+
+            <article class="flex flex-col justify-center align-center mt-20">
+                <img src="/images//imagen_3.png" class="w-40 h-40 block mx-auto" alt="photo_3">
+                <p class="text-xl font-semibold mt-5 text-center">Inspección Gratuita.</p>
+
+            </article>
+            <article class="flex flex-col justify-center align-center mt-20">
+                <img src="/images//imagen_2.png" class="w-40 h-40 block mx-auto" alt="photo_2">
+                <p class="text-xl font-semibold mt-5 text-center">
+                    Productos seguros para humanos, mascotas y el medio ambiente.
+
+                </p>
+
+            </article>
+            <article class="flex flex-col justify-center align-center mt-20">
+                <img src="/images//imagen_4.png" class="w-40 h-40 block mx-auto" alt="photo_4">
+                <p class="text-xl font-semibold mt-5 text-center">
+                    Llámanos y agenda tu visita sin compromiso.
+
+                </p>
+
+            </article>
+
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+    <section class="container mx-auto px-20 mt-20">
+        <h1 class="text-center text-4xl font-semibold mt-10 ">Soluciones a la Medida de tu Negocio</h1>
+
+        <div class="flex items-center">
+            <div class="w-8/12">
+                <h4 class="font-semibold text-2xl">Planes personalizados para cada industria</h4>
+
+                <p class="text-lg mt-10">
+                    Sabemos que cada negocio enfrenta desafíos únicos cuando se trata de plagas. Por ello, ofrecemos
+                    planes
+                    personalizados para fumigación que se adaptan a la dinámica y las necesidades de tu espacio. Nuestro
+                    objetivo es garantizar la continuidad de tus operaciones sin interrupciones, brindando un servicio
+                    discreto, profesional y altamente eficiente.
+                </p>
+
+            </div>
+
+            <div class="w-4/12 overflow-hidden">
+                <img src="https://fumigacionesfumilimp.com/wp-content/uploads/2021/09/servicio-de-fumigador-lima.png"
+                    alt="">
+            </div>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
+            <!--CARD COMPONENT -->
+            <!-- component -->
+            <div class="flex justify-center items-center ">
+                <div class="max-w-[720px] mx-auto">
+
+
+                    <!-- Centering wrapper -->
+                    <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
+                        <div
+                            class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-96">
+                            <img src="https://www.altocontroldeplagas.com/img/s1.jpg" alt="card-image"
+                                class="object-cover w-full h-full" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-col items-center justify-between mb-2">
+
+                                <p
+                                    class="  block font-sans text-xl antialiased font-medium leading-relaxed text-blue-gray-900">
+                                    Fumigación Preventiva
+                                </p>
+
+
+                                <p
+                                    class="block font-sans text-justify mt-5 antialiased font-normal leading-normal text-gray-700 opacity-75">
+                                    Ideal para negocios que buscan evitar la aparición de plagas antes de que se
+                                    conviertan en un problema.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="flex justify-center items-center ">
+                <div class="max-w-[720px] mx-auto">
+
+
+                    <!-- Centering wrapper -->
+                    <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
+                        <div
+                            class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-96">
+                            <img src="https://www.altocontroldeplagas.com/img/s2.jpg" alt="card-image"
+                                class="object-cover w-full h-full" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-col items-center justify-between mb-2">
+
+                                <p
+                                    class="  block font-sans text-xl antialiased font-medium leading-relaxed text-blue-gray-900">
+                                    Fumigación de emergencia
+                                </p>
+
+
+                                <p
+                                    class="block font-sans text-justify mt-5 antialiased font-normal leading-normal text-gray-700 opacity-75">
+                                    Respuesta inmediata para situaciones urgentes.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- component -->
+            <div class="flex justify-center items-center ">
+                <div class="max-w-[720px] mx-auto">
+
+
+                    <!-- Centering wrapper -->
+                    <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
+                        <div
+                            class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-96">
+                            <img src="https://www.altocontroldeplagas.com/img/s5.jpg" alt="card-image"
+                                class="object-cover w-full h-full" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-col items-center justify-between mb-2">
+
+                                <p
+                                    class="  block font-sans text-xl antialiased font-medium leading-relaxed text-blue-gray-900">
+                                    Mantenimiento periódico
+                                </p>
+
+
+                                <p
+                                    class="block font-sans text-justify mt-5 antialiased font-normal leading-normal text-gray-700 opacity-75">
+                                    Garantizamos la ausencia de plagas durante todo el año.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- component -->
+            <div class="flex justify-center items-center ">
+                <div class="max-w-[720px] mx-auto">
+
+
+                    <!-- Centering wrapper -->
+                    <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
+                        <div
+                            class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-96">
+                            <img src="https://www.altocontroldeplagas.com/img/s6.jpg" alt="card-image"
+                                class="object-cover w-full h-full" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-col items-center justify-between mb-2">
+
+                                <p
+                                    class="  block font-sans text-xl antialiased font-medium leading-relaxed text-blue-gray-900">
+                                    Atendemos Sectores Como:
+                                </p>
+
+
+                                <p
+                                    class="block font-sans text-justify mt-5 antialiased font-normal leading-normal text-gray-700 opacity-75">
+                                    * Restaurantes y cafeterías <br>
+                                    * Oficinas corporativas <br>
+                                    * Bodegas y almacenes <br>
+                                    * Comercios minoristas y mayoristas
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- DISEÑO MASONRY -->
+    <section class="container mx-auto px-20 mt-20">
+        <div class="container mx-auto p-4 w-max-3xl">
+            <div class="grid grid-cols-2  gap-4">
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="https://www.altocontroldeplagas.com/img/2.jpg"
+                            alt="" />
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="https://www.altocontroldeplagas.com/img/3.jpg"
+                            alt="" />
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="https://www.altocontroldeplagas.com/img/4.jpg"
+                            alt="" />
+                    </div>
+                </div>
+                <div class="grid gap-4">
+
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="https://www.altocontroldeplagas.com/img/s3.jpg"
+                            alt="" />
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="https://www.altocontroldeplagas.com/img/s1.jpg"
+                            alt="" />
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="https://www.altocontroldeplagas.com/img/s2.jpg"
+                            alt="" />
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <section class="container mx-auto px-20 mt-20" id="parallax">
+        <div class="flex items-center justify-center h-full">
+
+            <h1 class="text-4xl text-center text-white font-bold mx-auto">Protege tu inversión con nuestro
+                servicio garantizado</h1>
+        </div>
+
+
+    </section>
+
+
+    <section class="container mx-auto px-20 mt-20 flex justify-between items-center gap-4">
+        <h4 class="text-center font-bold text-4xl w-6/12">¿Porqué elegirnos ? </h4>
+
+        <ul class="space-y-4 text-lg text-semibold" id="reasons">
+            <li>Nuestros altos valores de responsabilidad, calidad y confianza nos respaldan, ya que trabajamos con:
+                Puntualidad y eficiencia
+            </li>
+
+            <li>Personal altamente calificado y comprometido</li>
+            <li>Trabajamos con productos de la mejor calidad</li>
+            <li>No dañamos las superficies, ni salud de los habitantes</li>
+            <li>Contamos con todas las certificaciones</li>
+        </ul>
+    </section>
+
+    <section class="container mx-auto px-20 mt-20 mb-5" id="parallax-2">
+        <div class="flex items-center justify-center h-full">
+
+            <h1 class="text-4xl text-center text-white font-bold mx-auto">Servicio disponible 24/7 para emergencias.
+            </h1>
+        </div>
+
+
+    </section>
+
+    <footer class="container mx-auto px-20 pt-5 bg-gray-800 flex mb-0  justify-between gap-5">
+        <div class="self-center">
+            <h5 class="text-white font-bold text-4xl">Fumigación MX</h5>
+        </div>
+
+        <div class="space-y-4 self-center">
+            <h4 class="text-white font-bold text-2xl">Siguenos en Redes Sociales</h4>
+            <span class="text-white font-semibold text-lg ">RTNO. 8 DE ROBLE MZ. 20 LT. 112 CASA 4 LOS Acapulco, Gro.
+                39870 </span>
+        </div>
+        <div class="space-y-4">
+            <h4 class="text-white font-bold text-2xl">Contáctanos</h4>
+            <p class="text-white font-semibold text-lg ">123 456 7891</p>
+            <p class="text-white font-semibold text-lg ">123 456 7891</p>
+            <p class="text-white font-semibold text-lg ">test@test.com</p>
+        </div>
+    </footer>
+    <!-- <i class="fa-brands fa-whatsapp  text-green-500 text-4xl fixed z-10"></i> -->
+    <a href="https://wa.me/+1234567891" class="cursor-pointer" target="_blank">
+        <i class="fa-brands fa-whatsapp rounded-full    text-green-500 text-4xl fixed z-10  bottom-10 right-10"></i>
+
+    </a>
+
+
+
+    <!-- MENU HEADER NAVBAR -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', function () {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+
+</body>
+
+</html>
