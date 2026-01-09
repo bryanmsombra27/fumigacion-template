@@ -16,7 +16,7 @@
     <!--  MENU HEADER -->
     <!-- component -->
     <nav
-        class="bg-white border border-gray-200 dark:border-gray-700 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 shadow">
+        class="bg-white border border-gray-200 dark:border-gray-700 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 shadow fixed top-0 right-0 left-0 z-100">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
             <a href="/" class="flex items-center">
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
@@ -46,25 +46,25 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#about"
                             class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                             About
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#services"
                             class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                             Services
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#pricing"
                             class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                             Pricing
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#contact"
                             class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                             Contact
                         </a>
@@ -96,7 +96,7 @@
     </section>
 
 
-    <section class="container mx-auto md:px-20">
+    <section class="container mx-auto md:px-20" id="about">
         <h1 class="text-center text-xl md:text-4xl font-semibold mt-10 ">Servicio de Fumigación y Sanitización a tu
             Alcance</h1>
 
@@ -218,7 +218,7 @@
 
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md-10 md:mt-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md-10 md:mt-20" id="services">
             <!--CARD COMPONENT -->
             <!-- component -->
             <div class="flex justify-center items-center ">
@@ -358,7 +358,7 @@
 
 
     <!-- DISEÑO MASONRY -->
-    <section class="container mx-auto md:px-20 mt-20">
+    <section class="container mx-auto md:px-20 mt-20" id="pricing">
         <div class="container mx-auto p-4 md:w-max-3xl">
             <div class="grid grid-cols-2  gap-4">
                 <div class="grid gap-4">
@@ -433,7 +433,7 @@
 
     </section>
 
-    <footer
+    <footer id="contact"
         class="container mx-auto md:px-20 pt-5 bg-gray-800 flex flex-col md:flex-row mb-0 items-center md:justify-between gap-5 text-center">
         <div class="self-center">
             <h5 class="text-white font-bold text-4xl">Fumigación MX</h5>
@@ -453,7 +453,8 @@
     </footer>
     <!-- <i class="fa-brands fa-whatsapp  text-green-500 text-4xl fixed z-10"></i> -->
     <a href="https://wa.me/+1234567891" class="cursor-pointer" target="_blank">
-        <i class="fa-brands fa-whatsapp rounded-full    text-green-500 text-4xl fixed z-10  bottom-10 right-10"></i>
+        <i
+            class="fa-brands fa-whatsapp rounded-full    text-green-500 text-4xl fixed z-10 bottom-5  md:bottom-10 right-2 md:right-10"></i>
 
     </a>
 
